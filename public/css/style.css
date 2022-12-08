@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #25292D;
+    line-height: 1.75;
+    color: #25292D;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 400;
+    margin: auto;
+}
+
+h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 85px;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+/* HEADER */
+.header{
+    display: flex;
+    align-items: center;
+    padding: 35px 55px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    /* We need to add a gradient background starting from black on top to transparent on bottom */
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0));
+}
+.header__logo{
+    line-height: 0;
+}
+.header__logo a{
+    display: inline-block;
+    text-decoration: none;
+}
+.header__logo h1{
+    font-size: 20px;
+    color: #F2F4EF;
+    margin: 0;
+    position: relative;
+    display: block;
+}
+
+.header__logo img{
+    height: 45px;
+    width: auto;
+}
+
+.header__menu{
+    margin-left: auto;
+}
+
+.header__menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.header__menu ul li{
+    margin: 0 10px;
+}
+
+.header__menu ul li a{
+    color: #F2F4EF;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.header__menu ul li a:hover{
+    color: #f5f5f5;
+    text-decoration: underline;
+}
+
+.header__button{
+    margin-left: 20px;
+}
+
+.header__button button{
+    background: #F2F4EF;
+    border: none;
+    color: #000;
+    padding: 20px 30px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* COVER */
+.cover{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 100vh;
+    background-image: url(../img/GATE_IMAGE_OPT.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.cover::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.cover__content{
+    text-align: left;
+    width: 50%;
+    padding: 55px;
+    position: relative;
+    z-index: 1;
+}
+
+.cover__title{
+    color: #F2F4EF;
+    margin-bottom: 50px;
+}
+
+.cover__subtitle{
+    color: #F2F4EF;
+    margin-bottom: 50px;
+}
+
+.cover__subtitle i{
+    margin-right: 10px;
+    opacity: 1;
+    color: #fff;
+}
+
+.cover__call_to_action{
+    margin-top: 20px;
+}
+
+.cover__call_to_action button{
+    background: #9E8941;
+    border: none;
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* MEDIUM COVER */
+.medium-cover{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    min-height: 50vh;
+    background-image: url(../img/francesca-tosolini-XcVm8mn7NUM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #F2F4EF;
+    padding-top: 70px;
+}
+
+.medium-cover::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.medium-cover__content{
+    text-align: left;
+    width: 100%;
+    padding: 55px;
+    position: relative;
+    z-index: 1;
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp{
+    position: fixed;
+    bottom: 55px;
+    right: 55px;
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp a{
+    display: block;
+    background-image: url(../img/whatsapp_icon.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* CONTACT FORM */
+
+.contact__form{
+    padding: 55px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 35%;
+    height: 100%;
+    background-color: #F2F4EF;
+    z-index: 11;
+    transform: translateX(100%);
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    overflow-y: scroll !important;
+}
+
+.contact__form.active{
+    transform: translateX(0%);
+}
+
+.contact__form__title{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.form__group{
+    margin-bottom: 20px;
+}
+
+.form__group label{
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.form__group input{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form__group textarea{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    resize: none;
+}
+
+.form__group input:focus, .form__group textarea:focus{
+    outline: none;
+    border: 1px solid #9E8941;
+}
+
+.error{
+    color: red;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.contact__form__close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+}
+
+.contact__form__close button{
+    background: transparent;
+    border: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.contact__form button.submit{
+    background: #9E8941;
+    border: none;
+    color: #F2F4EF;
+    padding: 20px 30px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.contact__form .terms{
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.contact__form .terms a{
+    color: #000;
+    text-decoration: underline;
+}
+
+/* SPECS */
+.specs{
+    padding: 55px;
+    background-color: #1A1F22;
+    color: #F2F4EF;
+}
+
+.specs.left__image{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.specs.left__image .specs__content{
+    width: 50%;
+    padding-left: 55px;
+}
+
+.specs.left__image .specs__image{
+    width: 50%;
+}
+
+.specs.specs.left__image .specs__image img{
+    width: 100%;
+}
+
+.specs.right__image{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.specs.right__image .specs__content{
+    width: 50%;
+    padding-right: 55px;
+}
+
+.specs.right__image .specs__image{
+    width: 50%;
+}
+
+.specs.specs.right__image .specs__image img{
+    width: 100%;
+}
+
+/* FOOTER */
+.footer{
+    padding: 55px;
+    background-color: #3A4044;
+    color: #F2F4EF;
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__logo a{
+    text-decoration: none;
+}
+
+.footer__logo a h1{
+    font-size: 20px;
+    font-weight: 700;
+    color: #F2F4EF;
+    line-height: 20px !important;
+}
+
+.footer__menu{
+    width: 60%;
+}
+
+.footer__menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__menu ul li{
+    margin-bottom: 10px;
+}
+
+.footer__menu ul li a{
+    text-decoration: none;
+    color: #F2F4EF;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer__menu ul li a:hover{
+    color: #9E8941;
+    text-decoration: underline;
+}
+
+.footer__social_media{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer__social_media ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer__social_media ul li{
+    margin-right: 10px;
+}
+
+.footer__social_media ul li a{
+    text-decoration: none;
+    color: #F2F4EF;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer__content .credits{
+    font-size: 12px;
+    font-weight: 400;
+    color: #F2F4EF;
+    margin-top: 20px;
+    opacity: 0.5;
+}
+
+.success{
+    background-color: #9E8941;
+    color: #F2F4EF;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
