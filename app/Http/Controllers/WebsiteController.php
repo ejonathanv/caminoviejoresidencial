@@ -9,6 +9,12 @@ use App\Http\Requests\ContactFormRequest;
 
 class WebsiteController extends Controller
 {
+
+    public function landing()
+    {
+        return view('website.landing');
+    }
+
     public function index()
     {
         return view('website.index');

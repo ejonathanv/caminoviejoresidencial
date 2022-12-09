@@ -1,0 +1,16 @@
+@media screen and (max-width: 768px) {
+    .landing__page .landing__page__content {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .landing__page__title{
+        font-size: 30px !important;
+        line-height: 40px !important;
+    }
+
+    .whatsapp{
+        right: 20px;
+        bottom: 20px;
+    }
+}

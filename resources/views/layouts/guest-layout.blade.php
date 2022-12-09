@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camino Viejo Residencial - Venta de Terrenos</title>
+    <title>Camino Viejo Residencial - Venta de Terrenos en Vicente Guerrero B.C.</title>
 
     <!-- We need to import the CSS file -->
     <link rel="stylesheet" href="{{ asset('css/normalize.css') }}">
