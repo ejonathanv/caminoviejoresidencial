@@ -11,13 +11,13 @@
             <ul class="landing_page__social_icons">
                 <!-- We need the font awesome icons for facebook and instagram -->
                 <li>
-                    <a href="https://www.facebook.com/Camino-Viejo-Residencial-103000000000000" target="_blank">
+                    <a href="https://www.facebook.com/caminoviejo.residencial" target="_blank">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </li>
                 
                 <li>
-                    <a href="https://www.instagram.com/caminoviejoresidencial/" target="_blank">
+                    <a href="https://www.instagram.com/caminoviejo.residencial" target="_blank">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </li>
